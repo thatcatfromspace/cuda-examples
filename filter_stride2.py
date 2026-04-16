@@ -24,8 +24,6 @@ def blur_stride2(img, output):
 
         output[row][col] = total // 9
 
-        cuda.atomic.add()
-
 
 img = np.array([
     [10,20,30,40,50,60],
